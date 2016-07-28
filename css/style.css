@@ -488,7 +488,7 @@ footer{
 }
 /*RESOLUTIONS*/
 /*768px*/
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 788px) { 
 	.container{
 		max-width: 768px;
 		padding: 0 20px; 
@@ -668,7 +668,7 @@ footer{
 	}
 }
 /*480px*/
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 500px) { 
 	.container{
 		max-width: 480px;
 	}
@@ -684,8 +684,17 @@ footer{
 /*HEADER MENU*/ 
 
 	.wrapper-menu{
-		overflow: hidden;
-		height:300px;
+    	display: inline-block;
+    	height: 276px;
+    	width: 38px;
+	}
+	.link-320{
+		display: block;
+		position: absolute;
+		left: 45.8%;
+		top: 142px;
+		border-bottom: 2px solid #edbfff;
+
 	}
 	.wrapper-menu .menubox{
 		display: none;
@@ -693,6 +702,10 @@ footer{
 	.wrapper-menu:hover .menubox{
 		display: block;
 	}
+	.wrapper-menu:hover .link-320>a{
+		display: none;
+	}
+
 		
     header .menubox{
     	float: none;
@@ -956,26 +969,23 @@ footer{
 	}
 }
 /*320px*/
-@media screen and (max-width: 325px) { 
+@media screen and (max-width: 340px) { 
 	.container{
 		max-width: 320px;
 		padding: 0 20px
 	}
-	header .menubox {
+	/*header .menubox {
     	display: none;
-    }
+    }*/
     .link-320{
-    	display: block;
-    	width: 37px;
-    	margin: 0 auto;
-    	padding: 5px;
-    }	
-    .link-320:hover{
-    	border-bottom: 2px solid #edbfff;
+   	
+   		left: 44.5%;
+    	top: 146px;
     }
-	.wrapper-menu:hover .menubox{
-		display: none;
-	}
+    header .menubox{
+    	top: 134px;
+    	left: 10.3%;
+    }	
     .logo{
     	padding-bottom: 25px;
     }
