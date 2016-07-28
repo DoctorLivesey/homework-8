@@ -3,7 +3,7 @@ body{
 }
 .container{
 	position: absolute;
-	max-width: 960px;
+	max-width: 960px; 
 	margin: auto;
 	left: 0; 
 	right: 0;
@@ -87,8 +87,8 @@ header{
 }
 .shadowbox__img{
 	position: absolute;
-	top: 248px;
-	left: 59.5%;
+	top: 245px;
+	right: 17.8%;
 }
 .radiobutton{
 	position: absolute;
@@ -121,6 +121,10 @@ header{
 	width: 33.3%;
 	box-sizing: border-box;
 	padding-top: 75px;
+}
+.text-wrapper{
+	height: 230px;
+	overflow: hidden;
 }
 
 .text h1 {
@@ -192,6 +196,7 @@ header{
     width: 30px;
     background-image: url(../img/sprite1.png);
 }
+
 .text__link1:hover{
 	background-position: 97px 31px;
 }
@@ -224,7 +229,7 @@ header{
 	background-position: 29px 31px;
 }
 /*MAIN*/
-/*BOX_1*/
+/*BLOGBOX*/
 .blog{
 	height: 485px;
     background: #f9f9f9;
@@ -233,8 +238,9 @@ header{
 	float: left;
 	margin-top: 94px;
 	width: 47%;
-	min-height: 292px;
+	height: 292px;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 .blog1__text{
 	margin-left: 23px;
@@ -250,10 +256,6 @@ header{
 	font-size: 30px;
 	text-shadow: 0 1px 0 #fff; /* drop shadow */
 }
-/*.blog1__text h1::after{
-	content: 'STARTS HERE';
-	color: #edbfff;
-}*/
 .blog1__text h1 span{
 	color: #edbfff;
 }
@@ -291,6 +293,7 @@ header{
 }
 .blog2{
 	float: right;
+	height: 340px;
 	width: 47%;
 	margin-top: 127px;
 	box-sizing: border-box;
@@ -344,12 +347,16 @@ header{
 .updates__reed:hover{
 	text-shadow: 0 0 8px #454545; /* drop shadow */
 }
-/*BOX_2*/
+/*BRANDSBOX*/
 .brands{
 	height: 120px;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
     background: #f9f9f9;
+}
+.brsnds-wrapper{
+	height: 89px;
+	overflow: hidden;
 }
 .brand-icon{
 	display: inline-block;
@@ -358,44 +365,44 @@ header{
 .brand-1{
 	width: 69px;
 	height: 64px;
-	margin-left: 91px;
+	margin-left: 9.5%;
 	margin-top: 25px;
 	background-position: 0 0;
 }
 .brand-2{
 	width: 72px;
 	height: 64px;
-	margin-left: 60px;
+	margin-left: 6.5%;
 	margin-top: 25px;
 	background-position: -134px 0;
 }
 .brand-3{
 	width: 65px;
 	height: 64px;
-	margin-left: 65px;
+	margin-left: 6.2%;
 	margin-top: 25px;
 	background-position: -270px 0;
 }
 .brand-4{
 	width: 50px;
 	height: 64px;
-	margin-left: 69px;
+	margin-left: 7.5%;
 	margin-top: 25px;
 	background-position: -410px 0;
 }
 .brand-5{
 	width: 103px;
 	height: 64px;
-	margin-left: 62px;
+	margin-left: 6.5%;
 	background-position: -528px 0;
 }
 .brand-6{
 	width: 78px;
 	height: 64px;
-	margin-left: 60px;
+	margin-left: 6.5%;
 	background-position: 78px 0;
 }
-/*BOX_3*/
+/*NEWSBOX*/
 .newsbox{
     height: 397px;
     background: #ececec;
@@ -403,10 +410,8 @@ header{
 .news{
 	width: 33%;
 }
-.text-4--news4,
-.text-5--news5,
-.text-6--news6{
-	display: none;	
+.wrapper-news{
+	display: none;
 }
 .text-1--news1 .logo{ 
 	float: none;
@@ -420,7 +425,7 @@ header{
 }
 .copyright{
 	padding-top: 5px;
-	font-family: Open Sans;
+	font-family: "OpenSans","Arial", sans-serif;;
     font-style: italic;
 	color: #c5c5c5;
 }
@@ -485,7 +490,8 @@ footer{
 /*768px*/
 @media screen and (max-width: 768px) { 
 	.container{
-		max-width: 728px;
+		max-width: 768px;
+		padding: 0 20px; 
 	}
 /*HEDER*/	
 	header {
@@ -504,7 +510,7 @@ footer{
 /*SLIDER*/	
 	.shadowbox__img {
 		top: 204px;
-		left: 58.4%;
+		right: 5.3%;
 	}
 	.shadowbox__text{
 		padding-top: 96px;
@@ -561,6 +567,10 @@ footer{
 	.blog1__text{
 		padding: 32px 32px 21px 37px;
 	}
+	.man {
+		left: 11px;
+		top: 118px;
+	}	
 	.del{
 		display: none;
 	}
@@ -588,25 +598,27 @@ footer{
 		padding-left: 4px;
 }
 /*BRANDSBOX*/
-
+	.brsnds-wrapper {
+		height: 90px;
+		margin-top: 4px;
+	}	
 	.brand-1{
 		margin-left: 0;
 	}
 	.brand-2 {
-		margin-left: 52px;
+		/*margin-left: 52px;*/
 	}
 	.brand-3 {
-		margin-left: 51px;
-		margin-top: 28px;
+		margin-left: 7%;
 	}	
 	.brand-4 {
-		margin-left: 60px;
+		margin-left: 8.5%;
 	}	
 	.brand-5 {
-		margin-left: 54px;
+		margin-left: 7.3%;
 	}
 	.brand-6 {
-		margin-left: 46px;
+		margin-left: 6%;
 	}
 /*NEWSBOX*/
 	.news{
@@ -617,11 +629,11 @@ footer{
 	.text-3--news3{
 		display: none;
 	}
-	.text-4--news4,
-	.text-5--news5,
-	.text-6--news6{
+	.wrapper-news{
 		display: block;	
 		padding-top: 81px;
+		overflow: hidden;
+		height: 280px; 
 	}	
 	.news p,
 	.news h1{
@@ -631,12 +643,15 @@ footer{
 		line-height: 1.5em;
 		
 	}
+	.news{
+		padding-top: 0px;
+	}
 	.text-4--news4{
-		margin-right: 67px;
+		margin-right: 9%;
 		
 	}
 	.text-5--news5{
-		margin-right: 67px;
+		margin-right: 9%;
 	}
 /*FOOTER*/
 	footer {
@@ -655,20 +670,35 @@ footer{
 /*480px*/
 @media screen and (max-width: 480px) { 
 	.container{
-		max-width: 440px;
+		max-width: 480px;
+	}
+	header{
+		height: 203px;
 	}
 	.logo {
     	float: none;
     	margin: 0 auto;
-    	padding-bottom: 326px;
+    	padding-bottom: 0px;
     	width: 154px;
     }
-/*HEADER MENU*/    
+/*HEADER MENU*/ 
+
+	.wrapper-menu{
+		overflow: hidden;
+		height:300px;
+	}
+	.wrapper-menu .menubox{
+		display: none;
+	}
+	.wrapper-menu:hover .menubox{
+		display: block;
+	}
+		
     header .menubox{
     	float: none;
     	position: absolute;
     	top: 130px;
-    	left: 22%;
+    	left: 23.3%;
     	padding: 0;
     	width: 244px;
     	height: 256px;
@@ -682,6 +712,7 @@ footer{
 		z-index: 10;
 		box-shadow: 0 3px 5px rgba(0,0,0,.16); /* drop shadow */
     }
+	
     header .menubox .menubox__item{
     	display: block;
     	margin: 0;
@@ -691,18 +722,29 @@ footer{
     	box-sizing: border-box;
     	background: #2d2432;
     }
+	header .menubox__item:first-child{
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	header .menubox__item:last-child{
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
 /*SLIDER*/
 	.shadowbox {
-    	height: 303px;
+    	height: 246px;
 	}
 	.shadowbox__text{
-		padding-top: 51px;
+		padding-top: 94px;
+		height: 150px;
 	}
 	.shadowbox__text p{
 		display: none;
 	} 
 	.shadowbox__text h1{
     	padding-bottom: 3px;
+		padding-left: 12px;
 		color: #fefefe; /* text color */
 		font-family: "League Gothic";
 		font-size: 36px;
@@ -710,10 +752,11 @@ footer{
 	}  
 	.shadowbox__text h2{
 		font-size: 16px;
+		padding-left: 12px;
 	} 
 	.shadowbox__img {
  	   	top: 184px;
-    	left: 53.5%;
+    	right: 5.5%;
     	width: 190px;
 	}
 	.radiobutton {
@@ -722,12 +765,26 @@ footer{
 	}
 /*ABOUT US BOX*/
 	.purplebox {
-    margin-top: 0;
+    margin-top: 100px;
     height: 597px;
 	}
+	.text-wrapper {
+		height: 135px;
+	}	
 	.text {
     float: none;
     width: 100%;
+	}
+	.text-1{
+		margin-left: -1%;
+	}
+	.text-2{
+		margin-left: -1%;
+		padding-top: 22px;
+	}
+	.text-3{
+		margin-left: -1%;
+		padding-top: 27px;
 	}
 	.text p {
 		font-size: 16px;
@@ -735,30 +792,32 @@ footer{
 	}
 	.text-2 h1 {
     	margin-left: 61px;
-    	padding-top: 27px;
+    	/*padding-top: 27px;*/
+		padding-top: 0px;
 	}
 	.text__link2{
-		margin-top: 29px;
+		margin-top: 0px;
 		margin-left: 9px;
 	}
 	.text-3 h1 {
-    	padding-top: 37px;
+    	/*padding-top: 37px;*/
+		padding-top: 0px;
     	margin-left: 61px;
 	}
 	.text__link3 {
     	margin-left: 7px;
-    	margin-top: 38px;
+    	margin-top: 0px;
 	}
 	.text__link--1 {
-    	margin-right: 6px;
+    	margin-right: 1px;
     	margin-top: -17px;
 	}	
 	.text__link--2 {
-    	margin-right: 7px;
+    	margin-right: 1px;
     	margin-top: -13px;
 	}
 	.text__link--3 {
-    	margin-right: 6px;
+    	margin-right: 1px;
     	margin-top: -13px;
 	}
 /*BLOG BOX*/
@@ -794,10 +853,9 @@ footer{
     	top: 88px;
 	}
 	.blog2 {
-    	float: left;
-    	width: 100%;
+    	float: right;
+    	width: 88%;
     	margin-top: 68px;
-    	margin-left: 60px;
     	box-sizing: border-box;
 	}
 	.blog2__text1 {
@@ -805,26 +863,51 @@ footer{
     	margin-bottom: 20px;
 	}
 	.updates__reed {
-    	margin-right: 105px;
+    	margin-right: 33px;
     }
     .del--blog{
     	display: none;
     }
 /*BRANDS BOX*/
+	.brsnds-wrapper {
+		height: 193px;
+		margin-top: 1px;
+	}	
 	.brands {
     	height: 232px;
     }
     .brand-1 {
-    	margin-left: 61px;
+    	margin-left: 13%;
     	margin-top: 35px;
 	}
+	.brand-2 {
+		margin-left: 12%;
+	}
+	.brand-3 {
+		margin-left: 12%;
+	}
 	.brand-4 {
-    	margin-left: 47px;
+		margin-left: 9.5%;
+	}
+	.brand-5 {
+		margin-left: 13.3%;
+	}
+	.brand-6 {
+		margin-left: 12%;
 	}
 /*NEWS*/
 	.newsbox {
     	height: 669px;
-	}	
+	}
+	.wrapper-news {
+		height: 650px;
+		padding-top: 0px;
+		display: block;
+		margin-left: -10px;
+	}
+	.text-3{
+		margin-left: 0;
+	}
 	.del--news{
 		display: inline;
 	}
@@ -858,6 +941,9 @@ footer{
 		padding-bottom: 12px;
 	}
 /*FOOTER*/
+	.menubox{
+		width: 105%;
+	}
 	.menubox--footer>.menubox__item {
     	margin-right: 21px;
     }
@@ -872,7 +958,8 @@ footer{
 /*320px*/
 @media screen and (max-width: 325px) { 
 	.container{
-		max-width: 280px;
+		max-width: 320px;
+		padding: 0 20px
 	}
 	header .menubox {
     	display: none;
@@ -886,12 +973,16 @@ footer{
     .link-320:hover{
     	border-bottom: 2px solid #edbfff;
     }
+	.wrapper-menu:hover .menubox{
+		display: none;
+	}
     .logo{
     	padding-bottom: 25px;
     }
 /*SLIDER*/
 	.shadowbox {
-    	height: 271px;
+    	height: 213px;
+		background: none;
 	}
 	.shadowbox__img{
 		display: none;
@@ -901,9 +992,15 @@ footer{
     	width: 232px;
     	margin: 0 auto;
 	}
+	.shadowbox__text h1 {
+		padding-left: 19px;
+	}	
+	.shadowbox__text h2 {
+		padding-left: 19px;
+	}
 	#SB {
-    left: 38.2%;
-    top: 430px;
+		left: 38.2%;
+		top: 430px;
 	}
 	
 /*ABOUT US BOX*/
@@ -914,6 +1011,9 @@ footer{
     	padding-top: 0px;
     	overflow: hidden;
 	}	
+	.text-wrapper {
+		height: 98px;
+	}
 	.text p{
 		height: 54px;
 	}
@@ -921,10 +1021,11 @@ footer{
 		margin-top: 68px;
 	}
 	.text-2{
-		margin-top: 33px;
+		margin-top: 61px;
+		margin-left: -3%;
 	}
 	.text-3{
-		margin-top: 46px;
+		margin-top: 75px;
 		margin-bottom: 60px;
 	}
 	.text__link--1 {
@@ -951,6 +1052,7 @@ footer{
 /*BLOG*/
 	.blog1__text {
     	padding: 26px 32px 32px 37px;
+		margin-left: 15px;
     	height: 271px;
     	}
     .blog1__text>h1>span {
@@ -971,34 +1073,42 @@ footer{
     	top: 365px;
 	} 
 	.blog2 {
-    	margin-left: -2px;
+		float: left;
+    	margin-left: -11px;
 	}
 	.blog2__text1 {
     	margin-bottom: 4px;
 	}
 	.updates__reed {
-    	margin-right: 6px;
+    	margin-right: -43px;
 	}
 /*BRANDS BOX*/
 	.brands {
     	height: 421px;
 	}
+	.brsnds-wrapper{
+		height: 400px;
+	}
 	.brand-1 {
-    	margin-left: 41px;
+    	margin-left: 13%;
     	margin-top: 51px;
 	}	
+	.brand-2 {
+		margin-left: 19%;
+	}
 	.brand-3 {
     	margin-top: 57px;
+		margin-left: 16%;
 	}
 	.brand-4 {
-    	margin-left: 59px;
+    	margin-left: 23%;
 	}
 	.brand-5 {
-    	margin-left: 20px;
+    	margin-left: 5%;
     	margin-top: 40px;
 	}
 	.brand-6 {
-    	margin-left: 51px;
+    	margin-left: 20%;
 	}
 /*NEWS BOX*/
 	.newsbox{
